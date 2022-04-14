@@ -71,11 +71,14 @@ public class Main {
         }
 
 
+
+
         for (int i2 = 0; i2 < numbers.length; i2++) {
             if (numbers[i2] % 2 != 0)
-                System.out.print(numbers[i2] + 1 + ", ");
-            else if (numbers[i2] % 2 == 0)
-                System.out.print(numbers[i2] + ", ");
+                numbers[i2] = numbers[i2] + 1;
+            System.out.print(numbers[i2] + ", ");
+
+
 
         }
 
