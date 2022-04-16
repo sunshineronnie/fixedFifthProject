@@ -3,8 +3,8 @@ package ru.skypro;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
-        int [] numbers = new int [3];
+        // write your code here
+        int[] numbers = new int[3];
         numbers[0] = 1;
         numbers[1] = 2;
         numbers[2] = 3;
@@ -15,14 +15,10 @@ public class Main {
                 System.out.print(numbers[i] + ", ");
 
 
-
         }
 
 
-
-
-
-        double [] fractional = {1.57, 7.654, 9.986};
+        double[] fractional = {1.57, 7.654, 9.986};
         for (int f = 0; f < fractional.length; f++) {
             if (f == fractional.length - 1)
                 System.out.println(fractional[f]);
@@ -31,9 +27,7 @@ public class Main {
         }
 
 
-
-
-        int [] myLine = {5, 6, 7, 8};
+        int[] myLine = {5, 6, 7, 8};
         for (int m = 0; m < myLine.length; m++) {
             if (m == myLine.length - 1)
                 System.out.println(myLine[m]);
@@ -49,8 +43,6 @@ public class Main {
             else
                 System.out.print(numbers[i1] + ", ");
         }
-
-
 
 
         for (int f1 = fractional.length - 1; f1 >= 0; f1--) {
@@ -71,16 +63,44 @@ public class Main {
         }
 
 
-
-
         for (int i2 = 0; i2 < numbers.length; i2++) {
-            if (numbers[i2] % 2 != 0)
-                numbers[i2] = numbers[i2] + 1;
+            numbers[i2] = i2 + 1;
+            while (numbers[i2] % 2 != 0){
+                numbers[i2] ++;
+            }
+            if (i2 == numbers.length -1 ){
+                System.out.println(numbers[i2]);
+                break;
+            }
             System.out.print(numbers[i2] + ", ");
 
 
 
+
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            
+
+
+
+
 
 
 
